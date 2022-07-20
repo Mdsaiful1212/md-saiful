@@ -163,7 +163,23 @@ article .blog-image{
 
 
 
+/* extra section */
+.extra{
+    display: none;
+    margin-top: 80px;
+}
+.extra a{
+    text-decoration: none;
+    color: white;
+    background: red;
+    padding: 10px;
+}
+/* extra section */
 
+
+
+
+/* footer start here */
 
 footer{
     margin-top: 100px;
@@ -197,19 +213,35 @@ hr{
     margin: 20px;
 }
 
+.icon{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .icon i{
+      margin: 20px;
+      font-size: 50px;
+      color: whitesmoke;
+  }
+
 
 /* media query start here */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:576px) {
     .header{
         flex-direction: column;
     }
     .div1 h2{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .div1{
-        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        padding-top: 100px;
+    }
+    .div2{
+        width: 100%;
     }
     
     .section{
@@ -219,6 +251,7 @@ hr{
         background: none;
         display: grid;
         width: 100%;
+        margin-top: 50px;
         margin-bottom: 50px;
     }
    article{
@@ -232,3 +265,50 @@ hr{
    }
    
 }
+
+
+
+
+/* media query tablet screen start here */
+@media screen and (min-width:577px) and (max-width:900px) {
+    
+    .div1 h2{
+        font-size: 20px;
+    }
+
+    .div1{
+        margin-top: 20px;
+    }
+    
+    .section{
+        flex-direction: column;
+    }
+    nav{
+        background: none;
+        display: flex;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    nav li{
+        margin: 20px;
+    }
+    nav .red{
+        background: yellow;
+    }
+   article{
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .footer-link{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+   }
+   .extra{
+    display: block;
+    display: flex;
+    justify-content: center;
+   }
+}
+/* media query tablet screen start here */
