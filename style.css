@@ -28,7 +28,7 @@ header{
     align-items: center;
     background: rgb(23, 23, 23); 
 }
-.div1{
+.banner-part-1{
     font-family: sans-serif;
     width: 40%;
     text-align: left;
@@ -36,7 +36,7 @@ header{
     background: rgb(23, 23, 23);
 }
 
-.div1 h2{
+.banner-part-1 h2{
     font-size: 50px;
     animation: slidshow 2s ease .5s infinite alternate;
     animation-play-state: running;
@@ -83,7 +83,7 @@ header{
 
 
 
-.div1 a{
+.banner-part-1 a{
 text-decoration: none;
 color: white;
 font-family: 20px;
@@ -95,20 +95,20 @@ border-radius: 5px;
 .fa-angle-right{
 padding: 0 5px; 
 } 
-.div1 a .fa-angle-right{
+.banner-part-1 a .fa-angle-right{
     margin-top: 20px;
 }
-.div1 p{
+.banner-part-1 p{
     margin: 20px 0;
     color: rgb(221, 216, 216);
 }
 
 
-.div2{
+.banner-part-2{
     width: 40%;
     
 }
-.div2 img{
+.banner-part-2 img{
     background: rgb(23, 23, 23);
     width: 100%;
     margin-top: 48px;
@@ -281,16 +281,16 @@ hr{
         
         flex-direction: column;
     }
-    .div1 h2{
+    .banner-part-1 h2{
         font-size: 25px;
     }
 
-    .div1{
+    .banner-part-1{
         text-align: center;
         width: 100%;
         padding-top: 100px;
     }
-    .div2{
+    .banner-part-2{
         width: 100%;
     }
     .section{
@@ -321,11 +321,11 @@ hr{
 /* media query tablet screen start here */
 @media screen and (min-width:577px) and (max-width:900px) {
     
-    .div1 h2{
+    .banner-part-1 h2{
         font-size: 20px;
     }
 
-    .div1{
+    .banner-part-1{
         margin-top: 20px;
     }
     
@@ -346,6 +346,9 @@ hr{
     }
    article{
     grid-template-columns: repeat(2, 1fr);
+   }
+   .View-all{
+    display: none;
    }
    .footer-link{
     text-align: center;
